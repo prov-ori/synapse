@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Синапс — химия, физика, биология</title>
+  <meta name="description" content="Интерактивная платформа по химии, физике и биологии: от нуля до поступления в медицинский вуз. Уроки, генераторы задач, лаборатории, карточки и пробные экзамены.">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Синапс">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Синапс — химия, физика и биология от нуля до медвуза">
+  <meta property="og:description" content="138 уроков, 45 генераторов задач с решениями, 18 интерактивных лабораторий, карточки и пробные экзамены. Бесплатно, без регистрации.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="skip-link" type="button" onclick="document.getElementById('main').focus()">К содержимому</button>
+  <header class="topbar">
+    <a class="logo" href="#/"><span class="logo-mark" aria-hidden="true"></span>Синапс</a>
+    <div class="header-stats" id="header-stats"></div>
+    <button class="icon-btn" id="theme-toggle" type="button" title="Сменить тему" aria-label="Сменить тему">🌓</button>
+  </header>
+  <div class="layout">
+    <nav class="nav" id="nav" aria-label="Разделы"></nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:2rem">Для работы платформы нужен JavaScript.</p></noscript>
+
+  <!-- ядро -->
+  <script src="js/core/util.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/ui.js"></script>
+  <!-- данные и движки -->
+  <script src="js/data/elements.js"></script>
+  <script src="js/core/chem.js"></script>
+  <script src="js/data/genetic.js"></script>
+  <script src="js/data/reference.js"></script>
+  <script src="js/core/quiz.js"></script>
+  <script src="js/gen/registry.js"></script>
+  <script src="js/gen/chem.js"></script>
+  <script src="js/gen/phys.js"></script>
+  <script src="js/gen/bio.js"></script>
+  <script src="js/data/course/core.js"></script>
+  <script src="js/data/course/chem1.js"></script>
+  <script src="js/data/course/chem2.js"></script>
+  <script src="js/data/course/phys1.js"></script>
+  <script src="js/data/course/phys2.js"></script>
+  <script src="js/data/course/bio1.js"></script>
+  <script src="js/data/course/bio2.js"></script>
+  <script src="js/data/glossary.js"></script>
+  <!-- приложение -->
+  <script src="js/app.js"></script>
+  <script src="js/labs/registry.js"></script>
+  <script src="js/labs/chem.js"></script>
+  <script src="js/labs/phys.js"></script>
+  <script src="js/labs/bio.js"></script>
+  <script src="js/views/home.js"></script>
+  <script src="js/views/course.js"></script>
+  <script src="js/views/practice.js"></script>
+  <script src="js/views/exam.js"></script>
+  <script src="js/views/cards.js"></script>
+  <script src="js/views/reference.js"></script>
+  <script src="js/views/games.js"></script>
+  <script src="js/views/profile.js"></script>
+</body>
+</html>
